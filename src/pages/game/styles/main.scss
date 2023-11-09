@@ -3,6 +3,7 @@
     color: white;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
 }
 .moves{
     display: flex;
@@ -31,4 +32,23 @@
 .list_players{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    ul{
+        list-style: none;
+    }
+}
+.witch{
+    height: 20rem;
+}
+.lotipe_witch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FB9E00;
+    border-radius: 50%;
+    height: 25rem;
+    width: 25rem;
+}
+.nigths{
+    display: flex;
+    justify-content: center;
 }
