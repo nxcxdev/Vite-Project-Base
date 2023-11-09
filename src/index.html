@@ -1,18 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/header.scss">
-    <title>Home</title>
-  </head>
-  <body>
-      <a href="./pages/game/index.html">index</a>
-    <header>
-      <h1>Wheel of Witch</h1>
-      <img src="" alt="">
-
-
-    </header>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles/header.scss" />
+        <title>Home</title>
+    </head>
+    <body>
+        <a href="./pages/game/index.html">index</a>
+        <header>
+            <h1>Wheel of Witch</h1>
+            <img src="" alt="" />
+        </header>
+        <main>
+            <div class="main__section" id="about__section">
+                <h2 class="section__header">About the game</h2>
+                <p class="section__body">
+                    There's a witch among the citizens. Each night, the witch
+                    will choose a citizen to offer as sacrifice.
+                </p>
+            </div>
+            <div class="main__section" id="how__section">
+                <h2 class="section__header">How to play</h2>
+                <p class="section__body">
+                    Add as much players as you want to the game. Then, press
+                    ¨Start Game¨ and the game will begin.
+                </p>
+            </div>
+            <section id="setup__game">
+                <h2 class="section__header">Settings</h2>
+                <form>
+                    <label>Name</label>
+                    <input type="text" />
+                    <div id="flex__display">
+                        <label>Genre</label>
+                        <input
+                            type="radio"
+                            id="male"
+                            value="male"
+                            name="genre"
+                        />
+                        <label>Male</label>
+                        <input
+                            type="radio"
+                            id="female"
+                            value="female"
+                            name="genre"
+                        />
+                        <label>Female</label>
+                    </div>
+                    <input type="submit" />
+                </form>
+            </section>
+            <a class="button" id="start__game"></a>
+        </main>
+    </body>
 </html>
