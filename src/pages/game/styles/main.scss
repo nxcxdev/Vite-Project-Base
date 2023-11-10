@@ -5,10 +5,21 @@
     grid-template-rows: repeat(3, 1fr);
     justify-content: center;
 }
+@media (min-width: 450px) {
+    .main{
+        grid-template-rows: auto;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 .moves{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+@media (min-width: 450px) {
+    .moves{
+        border-left: white solid 1px;
+    }
 }
 .button_start{
     background-color: #380F4B;
@@ -24,7 +35,14 @@
     display: flex;
     flex-direction: column;
     background-color: #451B59;
+    border-radius: 20px;
     width: 100%;
+}
+@media (min-width: 450px) {
+    .players_eliminated{
+        
+        max-width: 100%;
+    }
 }
 .players_el{
     text-align: center;
