@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./styles/header.scss" />
+        <link rel="stylesheet" href="./style.scss" />
         <title>Home</title>
     </head>
     <body>
@@ -12,27 +12,27 @@
             <h1>Wheel of Witch</h1>
             <img src="" alt="" />
         </header>
-        <main>
+        <main class="flex" id="index__main">
             <div class="main__section" id="about__section">
-                <h2 class="section__header">About the game</h2>
-                <p class="section__body">
+                <h2>About the game</h2>
+                <p>
                     There's a witch among the citizens. Each night, the witch
                     will choose a citizen to offer as sacrifice.
                 </p>
             </div>
             <div class="main__section" id="how__section">
-                <h2 class="section__header">How to play</h2>
-                <p class="section__body">
+                <h2>How to play</h2>
+                <p>
                     Add as much players as you want to the game. Then, press
                     ¨Start Game¨ and the game will begin.
                 </p>
             </div>
             <section class="main__section" id="setup__game">
-                <h2 class="section__header">Settings</h2>
+                <h2>Settings</h2>
                 <form>
                     <label>Name</label>
                     <input type="text" />
-                    <div id="flex__display">
+                    <div class="flex">
                         <label>Genre</label>
                         <input
                             type="radio"
