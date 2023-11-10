@@ -4,8 +4,20 @@ body {
     background-color: v.$purple;
 }
 
-.flex {
-    display: flex;
+input {
+    font-family: v.$primary_font;
+    font-size: 2rem;
+    color: white;
+    background-color: v.$light_purple;
+    border: none;
+}
+
+#submit {
+    padding: 1rem;
+    background-color: v.$purple;
+    width: fit-content;
+    border-radius: 1.5rem;
+    margin: auto;
 }
 
 #index__main {
@@ -14,13 +26,34 @@ body {
     gap: 2rem;
 }
 
+#setup__form {
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+
+#name {
+    background-color: v.$light_purple;
+    border: none;
+    border-radius: 0 1.5rem 1.5rem 0;
+    width: 100%;
+}
+
+#genre__inputs {
+    background-color: v.$light_purple;
+    width: 100%;
+    border-radius: 0 1.5rem 1.5rem 0;
+    justify-content: space-evenly;
+}
+
 .main__section {
     background-color: v.$dark_purple;
     padding: 3rem;
     border-radius: 2rem;
+    flex-direction: column;
+    gap: 3rem;
     h2 {
         margin: 0;
-        margin-bottom: 3rem;
         font-size: 2.5rem;
         color: white;
         text-align: center;
@@ -29,6 +62,25 @@ body {
     p {
         margin: 0;
         font-size: 2rem;
-        color: white;        
+        color: white;      
+        font-family: v.$primary_font;
+        text-align: justify;
     }
+
+    label {
+        color: white;
+        font-family: v.$primary_font;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .label {
+        background-color: v.$purple;
+        border-radius: 1.5rem 0 0 1.5rem;
+    }
+
+}
+
+.flex {
+    display: flex;
 }
