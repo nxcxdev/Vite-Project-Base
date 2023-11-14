@@ -18,6 +18,8 @@ function app(){
         currentPlayers.push(newPlayer)
     })
     console.log(currentPlayers)
+    
+    
 }
 
-app()
+app();
