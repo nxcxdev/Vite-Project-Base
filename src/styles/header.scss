@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#Header{
+    background-color: rgb(94, 2, 131);  
+    font-size: 2.5rem;
+}
+
+#box{
+   display: grid;
+   grid-template-columns: 25% 75%;
+}
+
+#photo{
+    height: 4rem;
+    width: 4rem;
+    
+    
+}
+@media (min-width: 450px){
+    #photo{
+        height: 10rem;
+        width: 10rem;
+        padding-left: 2rem;
+    } 
+}
+#title{
+   color: white;
+}
+
+@media (min-width: 450px) {
+    #box{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
