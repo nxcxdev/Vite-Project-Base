@@ -12,12 +12,28 @@ input {
     border: none;
 }
 
+#aside__main {
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#center__main {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
 #submit {
     padding: 1rem;
     background-color: v.$purple;
     width: fit-content;
     border-radius: 1.5rem;
     margin: auto;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: v.$light_purple;
 }
 
 #index__main {
@@ -47,11 +63,13 @@ input {
 }
 
 .main__section {
+
     background-color: v.$dark_purple;
     padding: 3rem;
     border-radius: 2rem;
     flex-direction: column;
     gap: 3rem;
+
     h2 {
         margin: 0;
         font-size: 2.5rem;
@@ -81,6 +99,39 @@ input {
 
 }
 
+.button {
+    background-color: v.$dark_purple;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    font-family: v.$primary_font;
+    font-size: 6rem;
+    color: white;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: v.$light_purple;
+}
+
 .flex {
     display: flex;
+}
+
+@media (min-width:450px) {
+
+    #aside__main {
+        width: 25%;
+    }
+
+    #index__main {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #center__main {
+        height: 50%;
+    }
+
 }

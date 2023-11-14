@@ -13,53 +13,57 @@
             <img src="" alt="" />
         </header>
         <main class="flex" id="index__main">
-            <div class="main__section flex" id="about__section">
-                <h2>About the game</h2>
-                <p>
-                    There's a witch among the citizens. Each night, the witch
-                    will choose a citizen to offer as sacrifice.
-                </p>
-            </div>
-            <div class="main__section flex" id="how__section">
-                <h2>How to play</h2>
-                <p>
-                    Add as much players as you want to the game. Then, press
-                    ¨Start Game¨ to start playing.
-                </p>
-                <p>Each round, a player will be randomly eliminated.</p>
-            </div>
-            <section class="main__section flex" id="setup__game">
-                <h2>Settings</h2>
-                <form id="setup__form" class="flex">
-                    <div class="flex">
-                        <label class="label">Name</label>
-                        <input id="name" type="text" />
-                    </div>
-                    <div class="flex">
-                        <label class="label">Genre</label>
-                        <div id="genre__inputs" class="flex">
-                            <input
-                                class="radio__input"
-                                type="radio"
-                                id="male"
-                                value="male"
-                                name="genre"
-                            />
-                            <label for="male">Male</label>
-                            <input
-                                class="radio__input"
-                                type="radio"
-                                id="female"
-                                value="female"
-                                name="genre"
-                            />
-                            <label for="female">Female</label>
+            <aside class="flex" id="aside__main">
+                <div class="main__section flex" id="about__section">
+                    <h2>About the game</h2>
+                    <p>
+                        There's a witch among the citizens. Each night, the
+                        witch will choose a citizen to offer as sacrifice.
+                    </p>
+                </div>
+                <div class="main__section flex" id="how__section">
+                    <h2>How to play</h2>
+                    <p>
+                        Add as much players as you want to the game. Then, press
+                        ¨Start Game¨ to start playing.
+                    </p>
+                    <p>Each round, a player will be randomly eliminated.</p>
+                </div>
+            </aside>
+            <section class="flex" id="center__main">
+                <div class="main__section flex" id="setup__game">
+                    <h2>Settings</h2>
+                    <form class="flex" id="setup__form">
+                        <div class="flex">
+                            <label class="label">Name</label>
+                            <input id="name" type="text" />
                         </div>
-                    </div>
-                    <input id="submit" type="submit" />
-                </form>
+                        <div class="flex">
+                            <label class="label">Genre</label>
+                            <div class="flex" id="genre__inputs">
+                                <input
+                                    class="radio__input"
+                                    type="radio"
+                                    value="male"
+                                    name="genre"
+                                    id="male"
+                                />
+                                <label for="male">Male</label>
+                                <input
+                                    class="radio__input"
+                                    type="radio"
+                                    value="female"
+                                    name="genre"
+                                    id="female"
+                                />
+                                <label for="female">Female</label>
+                            </div>
+                        </div>
+                        <input type="submit" id="submit" />
+                    </form>
+                </div>
+                <a class="button" id="start__game">START GAME</a>
             </section>
-            <a class="button" id="start__game"></a>
         </main>
     </body>
 </html>
