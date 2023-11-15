@@ -1,0 +1,137 @@
+@use 'variables.scss' as v;
+
+body {
+    background-color: v.$purple;
+}
+
+input {
+    font-family: v.$primary_font;
+    font-size: 2rem;
+    color: white;
+    background-color: v.$light_purple;
+    border: none;
+}
+
+#aside__main {
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#center__main {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#submit {
+    padding: 1rem;
+    background-color: v.$purple;
+    width: fit-content;
+    border-radius: 1.5rem;
+    margin: auto;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: v.$light_purple;
+}
+
+#index__main {
+    padding: 2rem;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#setup__form {
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+
+#name {
+    background-color: v.$light_purple;
+    border: none;
+    border-radius: 0 1.5rem 1.5rem 0;
+    width: 100%;
+}
+
+#genre__inputs {
+    background-color: v.$light_purple;
+    width: 100%;
+    border-radius: 0 1.5rem 1.5rem 0;
+    justify-content: space-evenly;
+}
+
+.main__section {
+
+    background-color: v.$dark_purple;
+    padding: 3rem;
+    border-radius: 2rem;
+    flex-direction: column;
+    gap: 3rem;
+
+    h2 {
+        margin: 0;
+        font-size: 2.5rem;
+        color: white;
+        text-align: center;
+    }
+
+    p {
+        margin: 0;
+        font-size: 2rem;
+        color: white;      
+        font-family: v.$primary_font;
+        text-align: justify;
+    }
+
+    label {
+        color: white;
+        font-family: v.$primary_font;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .label {
+        background-color: v.$purple;
+        border-radius: 1.5rem 0 0 1.5rem;
+    }
+
+}
+
+.button {
+    background-color: v.$dark_purple;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    font-family: v.$primary_font;
+    font-size: 6rem;
+    color: white;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: v.$light_purple;
+}
+
+.flex {
+    display: flex;
+}
+
+@media (min-width:450px) {
+
+    #aside__main {
+        width: 25%;
+    }
+
+    #index__main {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #center__main {
+        height: 50%;
+    }
+
+}
